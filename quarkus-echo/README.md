@@ -1,5 +1,5 @@
 #### Use the Maven Plugin to create a Quarkus skeleton app
-```bash
+```
 mvn io.quarkus:quarkus-maven-plugin:1.0.0.CR2:create \
     -DprojectGroupId=demo.combat.quarkus \
     -DprojectArtifactId=quarkus-echo \

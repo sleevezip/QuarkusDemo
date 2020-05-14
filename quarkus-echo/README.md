@@ -42,6 +42,9 @@ docker build -t demo/quarkus-echo-distroless -f src/main/docker/Dockerfile.nativ
 ### Run the generated Docker Image
 ```
 docker run -i --name quarkus-echo --rm -p 8081:8081 demo/quarkus-echo 
+
+# Distroless
+docker run -i --name quarkus-echo-distroless --rm -p 8081:8081 demo/quarkus-echo-distroless
 ```
 
 

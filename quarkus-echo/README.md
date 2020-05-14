@@ -15,13 +15,15 @@ curl -sw "\n\n" http://localhost:8081/echo/quarkus | jq .
 ```
 or just navigate to http://localhost:8081/echo/quarkus
 
+By running the application with `dev` profile it allows so called Hot Deployments, which means when you make changes to any Java, resource or configuration files and re-hit the application, your new changes will immediately take effect – no downtime. Re-hitting the application essentially triggers a scan of the workspace and if there are any changes detected by Quarkus then the affected files are recompiled, and the application is redeployed, and your new request is then handled by the recompiled code.
+
 ### Install GraalVM
 ```
 https://www.graalvm.org/getting-started/
 ```
 
 ## Running Quarkus Application - Native Executable 
-#### Create a Native App on a specific Plataform (Linux) - With this command we have a Native Linux executable of the this MicroServices (Everything in once file - JVM, App and Dependencies)
+#### Create a Native App on a specific Plataform (Linux) - With this command we have a Native Linux executable of the this MicroServices (Everything in one file - JVM, App and Dependencies)
 ```
 mvn package -Pnative -Dquarkus.native.container-build=true
 ```

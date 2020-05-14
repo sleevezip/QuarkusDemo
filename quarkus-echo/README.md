@@ -7,7 +7,7 @@ mvn io.quarkus:quarkus-maven-plugin:1.0.0.CR2:create \
     -Dpath="/echo"
 ```
 
-#### Test Quarkus app locally
+#### Run locally
 ```
 mvn compile quarkus:dev
 
